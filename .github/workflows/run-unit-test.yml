@@ -1,0 +1,19 @@
+
+name: run unit test of feature branches
+ on:
+  push:
+    branch:
+      .features^*:
+ jobs:
+   run unit test: 
+    runs-on: ubunt-latest
+
+    Steps:
+    
+      - name: Checkout
+     uses: actions/checkout@v6.0.
+
+    -name: run unit test
+    run: mvn test
+       
+ 
