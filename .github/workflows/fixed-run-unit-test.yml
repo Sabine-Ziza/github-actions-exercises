@@ -3,7 +3,7 @@ name: run unit test on feature branches
 on:
   push:
     branches:
-     - 'features/*'
+      - main
 jobs:
   run_unit_test: 
     runs-on: ubuntu-latest
